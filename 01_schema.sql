@@ -56,3 +56,10 @@ CREATE TABLE payments (
     payment_status ENUM('Paid','Pending','Refunded') NOT NULL,
     FOREIGN KEY (order_id) REFERENCES orders(order_id)
 );
+
+CREATE TABLE payment_audit (
+    payment_id INT,
+    old_status ENUM('Paid','Pending','Refunded') NOT NULL,
+    new_status ENUM('Paid','Pending','Refunded') NOT NULL,
+    changed_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
