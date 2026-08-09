@@ -60,7 +60,7 @@ The project contains six related tables:
 6. Run `05_procedures.sql`.
 7. Review `06_transaction_example.sql`.
 
-## Suggested Resume Description
+## Description
 
 **Retail Sales & Customer Analytics Database | MySQL**
 - Designed a relational retail database with customers, products, orders, order items, categories and payments using primary/foreign keys and constraints.
